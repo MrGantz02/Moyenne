@@ -1,0 +1,1 @@
+Une calculatrice de moyenne en C++ !
