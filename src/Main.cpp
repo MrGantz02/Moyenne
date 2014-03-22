@@ -1,35 +1,35 @@
 #include <iostream>
-#include <vector> //Inclue le Vector et les fonctions associ�es.
+#include <vector> //Inclue le Vector et les fonctions associees.
 #include <cstdlib>
 
 using namespace std;
 
-void addNote() //Cr�� une fonction qui ne retourne aucune valeur, elle fait juste des actions.
+void addNote() //Créé une fonction qui ne retourne aucune valeur, elle fait juste des actions.
 {
-	int size; //Un int qui repr�sente le nombre de notes.
-	char choice; //Une lettre (character, ou char) qui repr�sente le choix de l'utilisateur.
-	double moyenne(0); //Un double (plus grand qu'un int) qui represente la moyenne. On l'initialise � 0.
+	int size; //Un int qui représente le nombre de notes.
+	char choice; //Une lettre (character, ou char) qui représente le choix de l'utilisateur.
+	double moyenne(0); //Un double (plus grand qu'un int) qui represente la moyenne. On l'initialise à 0.
 
-	cout << "\nCombien de notes avez-vous ?" << endl << "Marquez le nombre de notes que vous avez : "; //Remarquez le endl, qui a le m�me effet que \n.
+	cout << "\nCombien de notes avez-vous ?" << endl << "Marquez le nombre de notes que vous avez : "; //Remarquez le endl, qui a le même effet que \n.
 	cin >> size;
 	cout << "\nVous avez bien " << size << " notes ? Marquez Y en majuscule pour oui, une autre lette pour non : ";
 	cin >> choice;
 
-	if (choice == 'Y') //Si choice est �gal � Y.
+	if (choice == 'Y') //Si choice est égal à Y.
 	{
-		size - 1; //Comme un tableau commence par �ro et non par un, on enl�ve 1 � la taille.
-		vector<double> notes; //Cr�� un nouveau tableau sans limite fix�e initialement.
+		size - 1; //Comme un tableau commence par zéro et non par un, on enlàve 1 à la taille.
+		vector<double> notes; //Créé un nouveau tableau sans limite fixée initialement.
 
 		cout << "\nOK ! Maintenant marquez vos notes : ";
 
-		for (int i(0); i < size; ++i) //Si i est plus petit que la taille du tableau, alors on r�p�te les actions jusqu'� ce que i atteigne size.
+		for (int i(0); i < size; ++i) //Si i est plus petit que la taille du tableau, alors on répète les actions jusqu'à ce que i atteigne size.
 		{
 			double note;
 
 			cout << "\nSuivante : ";
 			cin >> note;
 
-			notes.push_back(note); //Ajoute une place dans le tableau des notes et ajoute le contenu de la variable note dans cette place. Comme les actions sont r�p�t�es, apr�s cela note revient � 0, et on r�attribut une valeur.
+			notes.push_back(note); //Ajoute une place dans le tableau des notes et ajoute le contenu de la variable note dans cette place. Comme les actions sont répétées, après cela note revient à 0, et on réattribut une valeur.
 		}
 
 		cout << "\nCalcul ...\n\n";
@@ -51,7 +51,7 @@ void addNote() //Cr�� une fonction qui ne retourne aucune valeur, elle fait 
 int main()
 {
 	cout << "Bonjour et bienvenue dans la calculatrice de moyenne de MrGantz02 !" << endl;
-	addNote(); //D�marre la fonction addNote().
+	addNote(); //Démarre la fonction addNote().
 
 	system("PAUSE");
 	return 0;
