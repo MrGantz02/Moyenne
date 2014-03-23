@@ -41,7 +41,7 @@ void addNote() //Créé une fonction qui ne retourne aucune valeur, elle fait ju
 
 		moyenne /= notes.size(); //Divise par le nombre de notes.
 
-		cout << "Votre moyenne est de " << moyenne << " !" << endl << "\n17 ou plus ? Excellent ! Mention d'excellence !" << endl << "15 ? Gg, continue comme ca ! Felicitations !" << endl << "12 ? Il faut t'ameliorer pour reussir !" << endl << "8 ? Vite !!! Remonte !!!" << endl << "Moins de 8 ? Mais que fais-tu ? Apprend et tu reussira !" << endl << "\n";
+		cout << "Votre moyenne est de " << moyenne << " !" << endl << "\n17 ou plus ? Excellent ! Mention d'excellence !" << endl << "15 ? Gg, continue comme ca ! Felicitations !" << endl << "12 ? Il faut t'ameliorer pour reussir !" << endl << "8 ? Vite !!! Remonte !!!" << endl << "Moins de 8 ? Mais que fais-tu ? Apprends et tu reussira !" << endl << "\n";
 	}
 	else
 	{
